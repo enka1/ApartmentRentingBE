@@ -1,0 +1,12 @@
+node_modules
+.env
+.env-example
+.gitattributes
+.gitignore
+.jsbeautifyrc
+develop.Dockerfile
+docker-compose.yml
+LICENSE
+nodemon.json
+production.Dockerfile
+README.md

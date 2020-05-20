@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+    server1:
+        build:
+            context: .
+            dockerfile: develop.Dockerfile
+        networks:
+            - back-tier
+    server2:
+        build:
+            context: .
+            dockerfile: develop.Dockerfile
+        ports:
+            - 8080:8080
+        networks:
+            - back-tier
+networks: 
+    back-tier:
+        driver: overlay
